@@ -443,6 +443,7 @@ h2.title {
 .portfolio-title {
   margin-left: 24px;
   margin-right: 24px;
+  margin-bottom: 4px;
 
   font-size: 18px;
   line-height: 2;
@@ -452,7 +453,6 @@ h2.title {
 .portfolio-text {
   margin-left: 24px;
   margin-right: 24px;
-  margin-bottom: 20px;
 
   font-size: 16px;
   line-height: 1.88;
@@ -499,26 +499,28 @@ h2.title {
 }
 .list.portfolio .portfolio-item {
   margin-bottom: 30px;
-
-  border: 1px solid #eeeeee;
 }
 .list.portfolio > .portfolio-item:nth-child(n + 7) {
   margin-bottom: 0px;
 }
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-item:focus .portfolio-overlay,
-.portfolio-item:hover .portfolio-overlay {
+.portfolio-link:focus .portfolio-overlay,
+.portfolio-link:hover .portfolio-overlay {
   opacity: 1;
 }
 
 .portfolio-link {
   display: block;
+
+  padding-bottom: 20px;
+
   text-decoration: none;
+  border: 1px solid #eeeeee;
 }
 .portfolio-thumb {
   position: relative;
