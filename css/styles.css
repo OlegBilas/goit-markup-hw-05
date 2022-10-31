@@ -519,8 +519,9 @@ h2.title {
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16); */
+  animation: portfolio-link-hover 250ms var(--timing-function) forwards;
 }
 
 .portfolio-link:focus .portfolio-overlay,
@@ -621,11 +622,15 @@ h2.title {
   border: none;
 }
 
-/* @keyframes modal-appearence{
+@keyframes portfolio-link-hover{
   from{
-    opacity: 0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12)ж
+  }
+  50%{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06);
   }
   to{
-    opacity: 1;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-} */
+}  
